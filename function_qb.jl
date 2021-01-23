@@ -1,7 +1,7 @@
 # function_qb.jl
 # 2021-01-23
 
-function Qb(pt, Fc, M, Q, d, pw, σwy, b, j)
+function Qb(pt, Fc, M, Q, d, pw, σwy, b)
 
 # 平成19年国土交通省告示第594号第4三号ハ表
 # Qb  はりのせん断耐力
@@ -16,12 +16,12 @@ function Qb(pt, Fc, M, Q, d, pw, σwy, b, j)
 # b   はりの幅(単位 ㎜)
 # j   応力中心距離(はりの有効せいに7/8を乗じて計算した数値とする。)
 
+  j = d * 7 / 8
   if M/Q < d
-    return (0.068pt ^ 0.23 * (Fc + 18)) / (1 + 0.12) + 0.85*sqrt(pw*σwy))*b*j
-  end
-  if M/Q > 3d
-    return  (0.068pt ^ 0.23 * (Fc + 18)) / (3 + 0.12) + 0.85*sqrt(pw*σwy))*b*j
-  end
-  (0.068pt ^ 0.23 * (Fc + 18)) / (M / (Q * d) + 0.12) + 0.85*sqrt(pw*σwy))*b*j
+    return (0.068pt ^ 0.23 * (Fc + 18)) / (1 + 0.12) + 0.85 * sqrt(pw * σwy)) * b * j
+  elseif M/Q > 3d
+    return (0.068pt ^ 0.23 * (Fc + 18)) / (3 + 0.12) + 0.85 * sqrt(pw * σwy)) * b * j
+  else
+    return (0.068pt ^ 0.23 * (Fc + 18)) / (M / (Q * d) + 0.12) + 0.85 * sqrt(pw * σwy)) * b * j
 end
 # eof
