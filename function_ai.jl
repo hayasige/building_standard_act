@@ -2,7 +2,7 @@
 # 2021/01/02
 
 function ai(αi, T)
-  if αi < 0. || 1. < αi
+  if αi < 0 || 1 < αi
     throw(DomainError(αi, "αi：範囲外."))
   end
   if T < 0.
