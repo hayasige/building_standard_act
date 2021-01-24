@@ -12,7 +12,6 @@
 | [function_fs.jl](./function_fs.jl) | Fsを算出する関数。昭和55年建設省告示第1972号第7表1
 | [function_fst.jl](./function_fst.jl) | 高力ボルトが引張力とせん断力とを同時に受ける時の高力ボルト摩擦接合部の高力ボルトの軸断面積に対する許容せん断応力度を算出する関数。令92条の2第2項
 | [function_gf.jl](./function_gf.jl) | ガスト影響係数Gfを算出する関数。昭和55年建設省告示第1972号第1第2項
-| [function_k.jl] (./function_k.jl)  | 水平震度kを算出する関数。令88条4項
 | [function_kr.jl](./function_kr.jl) | 剛心周りのねじり剛性KRを算出する関数。平成19年国土交通省告示第594号第5
 | [function_q.jl] (./function_q.jl)  | 速度圧qを算出する関数。令87条
 | [function_qa.jl](./function_qa.jl) | 地盤の許容応力度qaを算出する関数。 平成13年国土交通省告示第1113号第2表(1)
