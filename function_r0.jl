@@ -1,5 +1,6 @@
-# function_r0.jl
 function r0(h0, l0, h, l)
+
+# function_r0.jl
 # 平成19年国土交通省告示第594号第1三号イ(1)
 # r0 開口周比
 # h0 開口部の高さ(単位 m)
@@ -7,6 +8,6 @@ function r0(h0, l0, h, l)
 # h 開口部を有する耐力壁の上下のはりの中心間距離(単位 m)
 # l 開口部を有する耐力壁の両端の柱の中心間距離(単位 m)
 
-  sqrt(h0*l0/(h*l))
+  sqrt(h0 * l0 / (h * l))
 end
 # eof
