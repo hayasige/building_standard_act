@@ -1,5 +1,6 @@
-# function_cpe.jl
 function Cpe(H, Z, α)
+
+# function_cpe.jl
 # 平成12年建設省告示第1458号第3項表8
 # Cpe 帳壁の正のピーク外圧係数
 # H 建築物の高さと軒の高さとの平均(単位 m)
