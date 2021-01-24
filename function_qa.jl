@@ -1,7 +1,7 @@
+function qa(ic, iγ, iq, α, β, C, B, Nc, Nγ, Nq, γ1, γ2, Df)
+
 # function_qa.jl
 # 2021-01-23
-
-function qa(ic, iγ, iq, α, β, C, B, Nc, Nγ, Nq, γ1, γ2, Df)
 # 平成13年国土交通省告示第1113号第2表(1)
 # qa 地盤の許容応力度(単位 kN/m2)
 # ic, iγ, iq 基礎に作用する荷重の鉛直方向に対する傾斜角に応じて次の式によって計算した数値
