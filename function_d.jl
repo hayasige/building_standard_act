@@ -1,5 +1,6 @@
-# function_d.jl
 function d(α, β, γ, ls, rs)
+
+# function_d.jl
 # 平成12年建設省告示第1455号第2
 # d  垂直積雪量(単位 m)
 # α、β、γ 区域に応じて別表の当該各欄に掲げる数値
