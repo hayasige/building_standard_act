@@ -11,12 +11,12 @@ Compute Ai
 `T`:  設計用一次固有周期(単位 秒)(昭和55年建設省告示第1973号第2)
 # Example
 ```jldoctest
-julia> Ai(0.5, 1.0)
-1.4571067811865475
+julia> round(Ai(0.5, 1.0); digits=3)
+1.457
 ```
 """
 function Ai(αi, T)
-# function_ai.jl
+# Ai.jl
 # 2021/01/02
 
   1 .+ (1 ./ sqrt.(αi) .- αi ) * 2T /(1 + 3T)
