@@ -15,7 +15,8 @@ Compute fst
 `T0`: 前項の表に規定する基準張力
 # Example
 ```jldoctest
-julia> fst()
+julia> fst(150, 250, 500)
+75.0
 ```
 """
 function fst(fs0, σt, T0)
